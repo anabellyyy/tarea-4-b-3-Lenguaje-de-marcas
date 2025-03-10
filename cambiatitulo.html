@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cambia Título</title>
+	<style type="text/css">
+        h1{color: green; background-color: yellow;border: 2px solid green;font-size: 5em;text-align: center;}
+	
+
+	</style>
+</head>
+<script type="text/javascript">
+		function cambiaTitulo(){
+		let titulo=document.getElementById("titulo");
+		titulo.innerHTML = "nombre de usuario";
+	}
+				
+	function cambiaColor(){
+		let titulo=document.getElementById("titulo");
+		titulo.style.color = "red";
+		titulo.style.backgroundColor = "yellow";
+		titulo.style.fontSize = "4em";
+		titulo.style.border = "2px solid red";
+	}
+</script>
+<body>
+<h1 id="titulo"></h1>
+
+<button onclick="cambiaTitulo()">Cambia Título</button>
+<button onclick="cambiaColor()">añade un poco de color</button>
+	
+	
+
+</body>
+
+</html>

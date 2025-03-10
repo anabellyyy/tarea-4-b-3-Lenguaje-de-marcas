@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM</title>
+    <style>
+        .cambio {background-color: yellow;
+       color: pink;font-size: 50px;}
+       </style>
+       <script>
+           function aplicaClase (){
+            document.getElementById("titulo")
+               .className="cambio"; 
+    
+           }
+    
+    </script>
+    </head>
+    
+    <body>
+    <h1 id="titulo">Título Original</h1>    
+    <button onclick="aplicaClase()">Botón pulsando</button>
+  
+
+</body>
+</html>
+

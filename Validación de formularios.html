@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de formularios</title>
+    <script>
+        function validaFomulario (){
+            var usuario=document.getElementById("usuario");
+            if (usuario.value.length<5){    
+                alert ("error el campo debe ser mayor que 5 caracteres");
+                return false;
+            }
+            alert ("datos correctos, procedo a enviar");
+            return true;
+        }
+    </script>
+</head>
+<body>
+<form action="procesa-php" onsubmit="return validaFormulario()">
+<label for="usuario">Usuario:</label>
+<input type="text" minlength="5" name="usuario" id="usuario"><br>
+<p></p>
+<label for="usuario">He leído y acepto las condiciones</label>
+<input type="checkbox" name="nombre" id="usuario"><br>
+<p></p>
+
+<input type="submit" value="enviar datos" name="">
+</form>
+  
+</body>
+</html>

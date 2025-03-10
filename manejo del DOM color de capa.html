@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM</title>
+</head>    
+    <style>
+        .cambioamarillo {background-color: yellow;
+        width: 100%;
+        height: 300px;
+        border: 5px solid black;}
+        .cambiorojo {background-color: red;
+         width: 100%;
+        height: 300px;
+         border: 5px solid black;}
+        .cambioazul {background-color: blue;
+         width: 100%;
+        height: 300px;
+        border: 5px solid black;}
+        .cambioverde {background-color: green;
+         width: 100%;
+        height: 300px;
+        border: 5px solid black;}
+    </style>
+    <script>
+         function cambiaAmarillo (){   
+            document.getElementById("caja")
+            .className="cambioamarillo";            }
+           function cambiaRojo (){
+            document.getElementById("caja")
+            .className="cambiorojo"; 
+            }
+            function cambiaAzul (){
+             document.getElementById("caja")
+            .className="cambioazul"; 
+            }
+            function cambiaVerde (){
+            document.getElementById("caja")
+            .className="cambioverde"; 
+            }
+      
+          
+    </script>
+       
+
+    <body>
+    <div id="caja"></div>    
+    <button onclick="cambiaAmarillo()">amarillo</button>
+    <button onclick="cambiaRojo()">rojo</button>
+    <button onclick="cambiaAzul()">azul</button>
+    <button onclick="cambiaVerde()">verde</button>
+
+</body>
+</html>
+
